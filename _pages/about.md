@@ -7,7 +7,7 @@ subtitle: Welcome to my personal page.
 profile:
   align: right
   image: prof_pic.svg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>njcarrasco at mat.uc.cl</p>
     <p>Office M22, UC</p>
