@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Puc
+subtitle: <a href='#'>Affiliations</a> 
 
 profile:
   align: right
