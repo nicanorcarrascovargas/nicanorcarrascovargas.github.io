@@ -6,12 +6,12 @@ subtitle: Welcome to my personal page.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.svg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>njcarrasco at mat.uc.cl</p>
+    <p>Office M22, UC</p>
+    <p>Santiago, Chile</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
