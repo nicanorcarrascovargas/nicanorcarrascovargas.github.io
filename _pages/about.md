@@ -2,8 +2,6 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a> 
-
 profile:
   align: right
   image: prof_pic.jpg
