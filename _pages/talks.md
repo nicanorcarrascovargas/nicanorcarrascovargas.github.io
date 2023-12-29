@@ -9,6 +9,6 @@ nav_order: 2
 <!-- _pages/talks.md -->
 <div class="talks">
 
-{% bibliography -f {{ site.scholar.bibliography }} %}
+{% bibliography --file talks}
 
 </div>
