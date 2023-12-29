@@ -6,9 +6,7 @@ description: These are my talks
 nav: true
 nav_order: 2
 ---
-<!-- _pages/talks.md -->
-<div class="talks">
+
 
 {% bibliography --file talks}
 
-</div>
