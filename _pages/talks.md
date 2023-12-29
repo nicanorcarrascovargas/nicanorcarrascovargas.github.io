@@ -10,7 +10,7 @@ nav_order: 2
 <!-- _pages/talks.md -->
 <div class="publications">
 
-{% bibliography -f  --query @talk {{ site.scholar.bibliography }} %}
+{% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>
 
