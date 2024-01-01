@@ -10,7 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>📧 njcarrasco at mat.uc.cl</p>
-    <p>📍 [Facultad de matemáticas, UC](https://www.mat.uc.cl/)</p>
+    <p>📍 Office M22 <p>
+    <p>Facultad de matemáticas, UC<p>
     <p>Santiago, Chile</p>
 
 news: false  # includes a list of news items
