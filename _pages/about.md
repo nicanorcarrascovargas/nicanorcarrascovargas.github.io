@@ -20,4 +20,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a phd student at [PUC](mat.uc.cl) under the advise of [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/). 
+I am a phd student at [PUC](mat.uc.cl) under the advise of [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/).
+
+In this moment I am writing a thesis, and also looking for future postdoc positions, please let me now if you have relevant information. 
