@@ -3,10 +3,8 @@
   contents:
     - name: Full Name
       value: Nicanor Carrasco-Vargas
-    - name: Date of Birth
-      value: 11th April 1997
     - name: Languages
-      value: Spanish, English (C1)
+      value: Spanish, English (C1), French (Moderately low level, after 10 months in Toulouse, France)
 
 - title: Education
   type: time_table
