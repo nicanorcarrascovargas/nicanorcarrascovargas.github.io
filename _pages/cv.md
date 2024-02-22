@@ -9,4 +9,4 @@ description:
 toc:
 sidebar: left
 ---
-An updated and complete CV can be found by clicking the purple "PDF" button on the right. Below is a summarized version. 
+An updated and complete CV can be found by clicking the colored "PDF" button on the right. Below is a summarized version. 
