@@ -9,4 +9,4 @@ description:
 toc:
 sidebar: left
 ---
-An updated and more complete CV can be found [here]("https://orcid.org/0009-0002-7381-4382/print"). The following is a summarized version.
+An updated and complete CV can be found by clicking the purple "PDF" button on the right. Below is a summarized version. 
