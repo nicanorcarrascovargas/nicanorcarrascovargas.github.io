@@ -33,7 +33,7 @@
         <!-- Entry bib key -->
        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
        <!-- Title -->
-        <div class="title">{{entry.title}}{{". "}}
+        <div class="title">{{entry.title}}{{". With "}}
         {% assign author_array_size = entry.author_array | size %}
 
         {% assign author_array_limit = author_array_size %}
@@ -64,7 +64,7 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            {{author.first}} {{author.last}}
+            {{""}}
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
