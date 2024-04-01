@@ -37,9 +37,15 @@ layout: default
     
   </article>
   <article>
-    <div class="post">
-    {% bibliography -f {{ site.scholar.bibliography }} %}
-    </div>
+    <header class="post-header">
+      Research
+    <\header>
+    <a class="anchor" id="{{ research }}"></a>
+      <div class="card mt-3 p-3">
+          <div>
+            {% bibliography -f {{ site.scholar.bibliography }} %}
+          </div>
+      </div>
   </article>
 
 </div>
