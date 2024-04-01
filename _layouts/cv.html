@@ -92,7 +92,8 @@ layout: default
         </div>
       {% endfor %}
       </div>
+    
+      {% bibliography -f {{ site.scholar.bibliography }} %}
   </article>
-{% bibliography -f {{ site.scholar.bibliography }} %}
 </div>
 {% endunless %}
