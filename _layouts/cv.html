@@ -30,13 +30,16 @@ layout: default
           {% else %}
             {{ entry.contents }}
           {% endif %}
-            
-            {% bibliography -f {{ site.scholar.bibliography }} %}
           </div>
         </div>
       {% endfor %}
       </div>
     
+  </article>
+  <article>
+    <div class="post">
+    {% bibliography -f {{ site.scholar.bibliography }} %}
+    </div>
   </article>
 
 </div>
