@@ -40,15 +40,10 @@ layout: default
 <div class="post">
 
   <article>
-    <header class="post-header">
-      Research
-    </header>
-    <a class="anchor" id="{{ research }}"></a>
+     <a class="anchor" id="{{ research }}"></a>
       <div class="card mt-3 p-3">
-      <h3 class="card-title font-weight-medium">{{ Research2 }}</h3>
-          <div class="bib">
-            {% bibliography -f {{ site.scholar.bibliography }} %}
-          </div>
+      <h3 class="card-title font-weight-medium">{{ Research }}</h3>
+          {%- include selected_papers.html %}
       </div>
   </article>
 
