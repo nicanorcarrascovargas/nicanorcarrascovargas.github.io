@@ -1,5 +1,7 @@
 ---
 layout: default
+scholar:
+  bibliography_template: shortbib
 ---
 <!-- _layouts/cv.html -->
 {% unless site.data.resume %}
@@ -42,7 +44,7 @@ layout: default
   <article>
      <div class="card mt-3 p-3"><h3 class="card-title font-weight-medium"> Research </h3>
        <div>
-          {%- include selected_papers.html %}
+          {% bibliography %}
        </div>
        </div>
   </article>
