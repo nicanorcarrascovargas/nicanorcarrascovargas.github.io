@@ -22,5 +22,5 @@
   contents:
     - title: Premio universidad de Concepción
       year: 2018
-
+{% bibliography -f {{ site.scholar.bibliography }} %}
 
