@@ -106,8 +106,7 @@
           >{{more_authors_hide}}</span>
         {%- endif -%}
 
-        </div>
-
+        {{". "}}
         <!-- Journal/Book title and date -->
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
@@ -128,7 +127,7 @@
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
         {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-        <div class="periodical">
+       
           {{ periodical | strip }}{{". "}}{{ entry.note | strip }}
         </div>
 
