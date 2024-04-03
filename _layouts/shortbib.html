@@ -42,8 +42,7 @@
         {% endif %}
 
         {%- for author in entry.author_array limit: author_array_limit -%}
-        {%- if site.scholar.last_name contains author_last_name -%}
-        {%- else -%}
+        
            
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
@@ -74,7 +73,6 @@
             {%- else -%}
               {{author.first}} {{author.last}}
             {%- endif -%}
-          {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
         {%- assign more_authors = author_array_size | minus: author_array_limit -%}
