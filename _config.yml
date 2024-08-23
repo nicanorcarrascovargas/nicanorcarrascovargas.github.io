@@ -268,8 +268,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Carrasco-Vargas]
-  first_name: [Nicanor]
+  last_name: #[Carrasco-Vargas]
+  first_name: #[Nicanor]
 
   style: apa
   locale: en
