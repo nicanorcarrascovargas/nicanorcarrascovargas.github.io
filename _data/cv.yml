@@ -16,16 +16,9 @@
   type: time_table
   contents:
     - title: Bachelor in mathematics
-      institution: Universidad de Concepción
-      year: 2018 - 2020
+      institution: University of Concepción, Chile
+      year: 2014 - 2018
       
-    - title: Started PhD program 
-      institution: Pontificia Universidad Católica de Chile 
-      year: 2020
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - title: Premio universidad de Concepción
-      year: 2018
-
+    - title: PhD in Mathematics 
+      institution: Pontifical Catholic University of Chile 
+      year: 2020 - 2024
