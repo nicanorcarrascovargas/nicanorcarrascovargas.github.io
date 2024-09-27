@@ -6,7 +6,9 @@
     - name: Email
       value: njcarrasco at mat.uc.cl
     - name: Academic website
-      value: https://nicanorcarrascovargas.github.io/
+      value: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
+    - name: Orcid CV
+      value: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
     - name: Languages
       value: Spanish (Native), English (C1), French (Unknown level after 10 months in Toulouse, France)
 
