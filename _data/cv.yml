@@ -9,8 +9,6 @@
       value: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
     - name: Orcid
       value: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
-    - name: Languages
-      value: Spanish (Native), English (C1), French (Unknown level after 10 months in Toulouse, France)
 
 - title: Education
   type: time_table
@@ -20,7 +18,8 @@
       year: 2014 - 2018
       
     - title: PhD in Mathematics 
-      institution: Pontifical Catholic University of Chile 
+      institution: Pontifical Catholic University of Chile, Chile
       year: 2020 - 2024
       description: 
           - Supervised by Cristóbal Rojas and Sebastián Barbieri
+        
