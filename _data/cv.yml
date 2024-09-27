@@ -3,15 +3,19 @@
   contents:
     - name: Full Name
       value: Nicanor Carrasco-Vargas
+    - name: Email
+      value: njcarrasco at mat.uc.cl
+    - name: Academic website
+      value: https://nicanorcarrascovargas.github.io/
     - name: Languages
-      value: Spanish (Native), English (C1), French (Moderate level from 10 months in Toulouse, France)
+      value: Spanish (Native), English (C1), French (Unknown level after 10 months in Toulouse, France)
 
 - title: Education
   type: time_table
   contents:
     - title: Bachelor in mathematics
       institution: Universidad de Concepción
-      year: 2018
+      year: 2018 - 2020
       
     - title: Started PhD program 
       institution: Pontificia Universidad Católica de Chile 
