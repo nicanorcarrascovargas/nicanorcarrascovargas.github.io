@@ -2,8 +2,11 @@
   type: time_table
   contents:
     - title: Full Name Nicanor Carrasco-Vargas 
+      year: 1
     - title: Academic website <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
+      year: 2
     - title: Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
+      year: 3
 - title: Education
   type: nested_list
   contents:
