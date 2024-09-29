@@ -12,17 +12,12 @@
     - Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a> 
 
 
-- title: Academic Interests
+- title: General Information
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Full Name: Nicanor Carrasco-Vargas 
+    - title: Academic website: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
+    - title: Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
 - title: Education
   type: time_table
   contents:
