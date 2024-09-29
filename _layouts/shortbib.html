@@ -61,7 +61,7 @@
 
           {%- if forloop.length > 1 -%} {%- if forloop.first == true -%} {{"With "}} {%- endif -%}
           {%- if forloop.length > 2 -%} 
-                  {%- if forloop.index > 2 -%}&nbsp;{%- endif -%}
+                  {%- if forloop.index > 2 -%},&nbsp;{%- endif -%}
                   {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%} 
                 {%- endif -%}
           {%- endif -%}
@@ -105,8 +105,9 @@
               "
           >{{more_authors_hide}}</span>
         {%- endif -%}
-
+        {%- if author_array_size > 1 -%}      
         {{". "}}
+        {%- endif -%}    
         <!-- Journal/Book title and date -->
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
