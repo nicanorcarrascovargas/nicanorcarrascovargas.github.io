@@ -1,33 +1,19 @@
 - title: General Information
-  type: list
-  contents:
-    - Full Name Nicanor Carrasco-Vargas
-    - Academic website <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
-    - Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a> 
-- title: General Information
-  type: list
-  contents:
-    - Full Name Nicanor Carrasco-Vargas
-    - Academic website <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
-    - Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a> 
-
-
-- title: General Information
   type: nested_list
   contents:
     - title: Full Name: Nicanor Carrasco-Vargas 
     - title: Academic website: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
     - title: Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
+    
 - title: Education
-  type: time_table
+  type: nested_list
   contents:
     - title: Bachelor in mathematics
-      institution: University of Concepción, Chile
-      year: 2014 - 2018
-      
-    - title: PhD in Mathematics 
-      institution: Pontifical Catholic University of Chile, Chile
-      year: 2020 - 2024
-      description: 
-          - Supervised by Cristóbal Rojas and Sebastián Barbieri
-        
+      items:
+        - University of Concepción, Chile.
+        - 2014 - 2018.
+    - title: PhD in Mathematics
+      items:
+        - Pontifical Catholic University of Chile, Chile.
+        - 2020 - 2024.
+        - Supervised by Cristóbal Rojas and Sebastián Barbieri
