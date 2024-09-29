@@ -64,10 +64,8 @@
             {%- if forloop.first == false -%},&nbsp;{%- endif -%}
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%} 
           {%- endif -%}
-          {%- unless author_is_self -%}
-             {{author.first}} {{author.last}} 
-          {%- endunless -%} 
-              <!--
+          {%- if author_is_self -%}
+             <!--{{author.first}} {{author.last}} -->
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -75,7 +73,6 @@
               {{author.first}} {{author.last}}
             {%- endif -%}
           {%- endif -%}
-              -->
         {%- endfor -%}
         {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
