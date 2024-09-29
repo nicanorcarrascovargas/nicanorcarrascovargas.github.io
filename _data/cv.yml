@@ -1,11 +1,21 @@
 - title: General Information
   type: list
-  items:
-    - Full Name: Nicanor Carrasco-Vargas
-    - Academic website: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
-    - Orcid: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a> 
+  contents:
+    - Full Name Nicanor Carrasco-Vargas
+    - Academic website <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
+    - Orcid <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a> 
 
-
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 - title: Education
   type: time_table
   contents:
