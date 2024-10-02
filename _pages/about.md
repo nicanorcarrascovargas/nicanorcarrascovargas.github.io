@@ -21,6 +21,4 @@ Previously I was a phd student at [PUC](https://www.mat.uc.cl/) under the advise
 
 My research has focused on subshifts on finietly generated groups, with an emphasis on their recursive properties. This has taken me to some objects on infinite graphs, such as translation-like actions by $\mathbb{Z}$ and infinite Eulerian paths.
 
-<footer>
-  <p>This website uses the theme <a href="https://github.com/alshedivat/al-folio">al-folio</a></p>
-</footer> 
+## [This website uses the theme [al-folio](https://github.com/alshedivat/al-folio).]
