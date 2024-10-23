@@ -14,6 +14,6 @@ nav_order: 2
 </div>
 <div class="publications">
 
-{% bibliography -f {{ thesis.bib }} %}
+ {% bibliography -f thesis --group_by none %}
 
 </div>
