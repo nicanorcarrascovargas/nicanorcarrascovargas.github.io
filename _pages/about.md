@@ -8,7 +8,7 @@ profile:
   align: right
   image: foto_bonita.jpg
   image_circular: true # crops the image to make it circular
-  more_info: You can contact me at nicanor.vargas 🦠 uj.edu.pl.
+  more_info: # You can contact me at nicanor.vargas 🦠 uj.edu.pl.
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
