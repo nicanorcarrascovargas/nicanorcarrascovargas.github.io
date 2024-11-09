@@ -7,41 +7,14 @@
       value: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
     - name: Orcid 
       value: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
-- title: Experience
+- title: Education
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-    - title: Professor of Theoretical Physics 2
-      institution: Institute for Advanced Study, Princeton University
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      description: 
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      description: blaa 
+    - title: Bachelor in mathematics. University of Concepción, Chile. 2014 - 2018.
+    - title: PhD in Mathematics. Pontifical Catholic University of Chile, Chile. 2020 - 2024. Supervised by Cristóbal Rojas and Sebastián Barbieri.
+
 - title: Education
   type: nested_list
   contents:
-    - title: Bachelor in mathematics
-      description: description
-      items:
-        - University of Concepción, Chile.
-        - 2014 - 2018.
-    - title: PhD in Mathematics
-      items:
-        - Pontifical Catholic University of Chile, Chile.
-        - 2020 - 2024.
-        - Supervised by Cristóbal Rojas and Sebastián Barbieri
+    - title: Bachelor in mathematics. University of Concepción, Chile. 2014 - 2018.
+    - title: PhD in Mathematics. Pontifical Catholic University of Chile, Chile. 2020 - 2024. Supervised by Cristóbal Rojas and Sebastián Barbieri.
