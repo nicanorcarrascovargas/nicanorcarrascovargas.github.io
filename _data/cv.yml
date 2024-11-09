@@ -11,6 +11,7 @@
   type: time_table
   contents:
     - title: Professor of Theoretical Physics
+    - title: Professor of Theoretical Physics 2
       institution: Institute for Advanced Study, Princeton University
       description:
         - Description 1.
