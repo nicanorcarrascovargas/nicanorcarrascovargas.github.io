@@ -1,5 +1,5 @@
 - title: General Information
-  type: time_table
+  type: nested_list
   contents:
     - title: Full Nam: Nicanor Carrasco-Vargas 
     - title: Academic website <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
