@@ -10,5 +10,5 @@
 - title: Education
   type: nested_list
   contents:
-    - title: Bachelor in mathematics. University of Concepción, Chile. 2014 - 2018.
-    - title: PhD in Mathematics. Pontifical Catholic University of Chile, Chile. 2020 - 2024. Supervised by Cristóbal Rojas and Sebastián Barbieri.
+    - title: <b>PhD in Mathematics.</b> Pontifical Catholic University of Chile, Chile. 2020 - 2024. Supervised by Cristóbal Rojas and Sebastián Barbieri.
+    - title: <b>Bachelor in mathematics.</b> University of Concepción, Chile. 2014 - 2018.
