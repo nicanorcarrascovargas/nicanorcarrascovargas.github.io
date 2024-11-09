@@ -1,12 +1,10 @@
 - title: General Information
-  type: map
+  type: time_table
   contents:
-    - name: Full Name
-      value: Nicanor Carrasco-Vargas 
-    - name: Academic website
-      value: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
-    - name: Orcid 
-      value: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
+    - title: Full Name: Nicanor Carrasco-Vargas 
+    - title: Academic website: <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
+    - title: Orcid: <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
+    
 - title: Education
   type: time_table
   contents:
