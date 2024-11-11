@@ -1,5 +1,5 @@
 ## Al-folio modified
-This is a personal webpage created using the theme "al-folio", and the credit is to the respective authors. You can fork this version freely. I have made some slight modifications  towards the typical format used by mathematicians (Home, Research, Talks, and CV). In particular, it has a separate bibliography for Talks, and these bibliographies are written on the CV page using a diferent layout.   
+This is a personal webpage created using the theme "al-folio", and the credit is to the respective authors.
 
 ## License
 
