@@ -12,7 +12,7 @@ nav_order: 2
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>
-## PhD Thesis
+## PhD Thesis ##
 <div class="publications">
 
  {% bibliography -f thesis --group_by none %}
