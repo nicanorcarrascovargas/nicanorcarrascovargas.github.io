@@ -9,6 +9,6 @@ nav_order: 2
 <!-- _pages/talks.md -->
 <div class="publications">
   
-{% bibliography --file talks --order ascending%}
+{% bibliography --file talks --order ascending --group_order ascending%}
 
 </div>
