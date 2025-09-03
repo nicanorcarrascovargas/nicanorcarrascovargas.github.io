@@ -24,6 +24,6 @@ nav_order: 2
 ## PhD Thesis
 <div class="publications">
 
- {% bibliography -f thesis --group_by none %}
+{% bibliography -f thesis --group_by none %}
 
 </div>
