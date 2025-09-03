@@ -1,14 +1,1 @@
-- title: General Information
-  type: nested_list
-  contents:
-    - title: <b>Name:</b> Nicanor Carrasco-Vargas
-    - title: <b>Affiliation:</b> Jagiellonian University, Poland
-    - title: <b>Contact:</b> nicanor.vargas 📧 uj.edu.pl
-    - title: <b>Academic website:</b> <a href="https://nicanorcarrascovargas.github.io">nicanorcarrascovargas.github.io</a>
-    - title: <b>Orcid:</b> <a href="https://orcid.org/0009-0002-7381-4382/print">orcid.org/0009-0002-7381-4382/</a>
 
-- title: Education
-  type: nested_list
-  contents:
-    - title: <b>PhD in Mathematics.</b> Pontifical Catholic University of Chile, Chile. 2020 - 2024. Supervised by Cristóbal Rojas and Sebastián Barbieri.
-    - title: <b>Bachelor in mathematics.</b> University of Concepción, Chile. 2014 - 2018.
