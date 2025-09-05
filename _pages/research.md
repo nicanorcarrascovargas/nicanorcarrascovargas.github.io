@@ -7,14 +7,14 @@ nav: true
 nav_order: 2
 ---
 <!-- _pages/publications.md -->
-## Preprints
+## Submitted
 <div class="publications">
 
 {% bibliography -f preprints --group_by none %}
 
 </div>
 
-## Journals
+## Accepted
 <div class="publications">
 
 {% bibliography -f papers --group_by none %}
