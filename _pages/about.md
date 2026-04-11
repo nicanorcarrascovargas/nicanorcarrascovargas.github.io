@@ -19,4 +19,4 @@ My name is Nicanor Carrasco-Vargas. I am a postdoctoral researcher at [Jagiellon
 
 Previously, I was a PhD student at [Pontifical Catholic University of Chile](https://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Chile) with [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/).
 
-I like dynamics and computability. 
+I am interested in dynamics and computability. 
