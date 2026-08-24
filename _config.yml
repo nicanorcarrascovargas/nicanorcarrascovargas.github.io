@@ -88,6 +88,7 @@ wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: https://dblp.org/pid/348/5713.html # your DBLP profile url
 arxiv_url: http://arxiv.org/a/carrascovargas_n_1 # your arXiv author search URL
+mathscinet_url: https://mathscinet.ams.org/mathscinet/MRAuthorID/1661459 # your MathSciNet author profile URL
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id

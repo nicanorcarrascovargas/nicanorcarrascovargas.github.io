@@ -76,6 +76,9 @@
             {%- if site.arxiv_url -%}
             <a href="{{ site.arxiv_url }}" title="arXiv"><i class="ai ai-arxiv"></i></a>
             {% endif %}
+            {%- if site.mathscinet_url -%}
+            <a href="{{ site.mathscinet_url }}" title="MathSciNet"><i class="fa-solid fa-square-root-variable"></i></a>
+            {% endif %}
             {%- if site.stackoverflow_id -%}
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a>
             {% endif %}
