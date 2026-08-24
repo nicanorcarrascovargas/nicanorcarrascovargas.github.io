@@ -13,7 +13,7 @@ profile:
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 My name is Nicanor Carrasco-Vargas (he/they). I am a postdoctoral researcher at [Jagiellonian University](https://en.wikipedia.org/wiki/Jagiellonian_University) with [Adam Kanigowski](https://akanigow.math.umd.edu/).
 
