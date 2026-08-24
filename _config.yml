@@ -87,6 +87,7 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: https://dblp.org/pid/348/5713.html # your DBLP profile url
+arxiv_url: "https://arxiv.org/search/?query=Carrasco-Vargas%2C+N&searchtype=author" # your arXiv author search URL
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
