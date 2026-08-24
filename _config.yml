@@ -89,7 +89,7 @@ wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: https://dblp.org/pid/348/5713.html # your DBLP profile url
 arxiv_url: http://arxiv.org/a/carrascovargas_n_1 # your arXiv author search URL
 mathscinet_url: https://mathscinet.ams.org/mathscinet/MRAuthorID/1661459 # your MathSciNet author profile URL
-acm_url: https://dl.acm.org/profile/99661992753 # your ACM Digital Library profile URL
+acm_url: # https://dl.acm.org/profile/99661992753 # your ACM Digital Library profile URL
 zbmath_url: https://zbmath.org/authors/carrasco-vargas.nicanor # your zbMATH author profile URL
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
