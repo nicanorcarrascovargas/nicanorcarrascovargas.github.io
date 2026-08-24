@@ -71,7 +71,7 @@ mastodon_username: # your mastodon instance+username in the format instance.tld/
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: FQzQSC8AAAAJ # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
+semanticscholar_id: 2212784117 # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0009-0002-7381-4382 # your ORCID ID
 medium_username: # your Medium username
@@ -79,7 +79,7 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
-research_gate_profile: # your profile on ResearchGate
+research_gate_url: https://www.researchgate.net/scientific-contributions/Nicanor-Carrasco-Vargas-2247676401 # your ResearchGate contributions URL
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
 work_url: # work page URL
@@ -89,6 +89,8 @@ wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: https://dblp.org/pid/348/5713.html # your DBLP profile url
 arxiv_url: http://arxiv.org/a/carrascovargas_n_1 # your arXiv author search URL
 mathscinet_url: https://mathscinet.ams.org/mathscinet/MRAuthorID/1661459 # your MathSciNet author profile URL
+acm_url: https://dl.acm.org/profile/99661992753 # your ACM Digital Library profile URL
+zbmath_url: https://zbmath.org/authors/carrasco-vargas.nicanor # your zbMATH author profile URL
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id

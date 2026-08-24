@@ -25,8 +25,8 @@
             {%- if site.osf_id -%}
             <a href="https://osf.io/{{ site.osf_id }}/" title="Open Science Framework"><i class="ai ai-osf"></i></a>
             {% endif %}
-            {%- if site.research_gate_profile -%}
-            <a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+            {%- if site.research_gate_url -%}
+            <a href="{{ site.research_gate_url }}" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
             {% endif %}
             {%- if site.scopus_id -%}
             <a href="https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}" title="Scopus"><i class="ai ai-scopus"></i></a>
@@ -78,6 +78,12 @@
             {% endif %}
             {%- if site.mathscinet_url -%}
             <a href="{{ site.mathscinet_url }}" title="MathSciNet"><i class="fa-solid fa-square-root-variable"></i></a>
+            {% endif %}
+            {%- if site.acm_url -%}
+            <a href="{{ site.acm_url }}" title="ACM Digital Library"><i class="ai ai-acmdl"></i></a>
+            {% endif %}
+            {%- if site.zbmath_url -%}
+            <a href="{{ site.zbmath_url }}" title="zbMATH Open"><i class="fa-solid fa-infinity"></i></a>
             {% endif %}
             {%- if site.stackoverflow_id -%}
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a>
