@@ -6,11 +6,11 @@ title: Nicanor Carrasco-Vargas # the website title (if blank, full name will be 
 first_name: Nicanor
 middle_name: 
 last_name: Carrasco-Vargas
-email: nicanor.vargas\(^_^)/uj.edu.pl 
+email: nicanor.vargas at uj.edu.pl 
 description: #  
 footer_text: "Website theme: al-folio" 
 keywords:    # add your own keywords or leave empty
-contact_note: "Contact: nicanor.vargas  (^_^)  uj.edu.pl"
+contact_note: "Contact: nicanor.vargas  at  uj.edu.pl"
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚗️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
