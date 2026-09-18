@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 <!-- _pages/talks.md -->
+Here are the slides of some talks.
+
 <div class="publications">
   
 {% bibliography --file talks --order descending --group_order descending --sort_by descending --group_by none%}
