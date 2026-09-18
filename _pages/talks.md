@@ -6,8 +6,9 @@ description:
 nav: true
 nav_order: 2
 ---
-<!-- _pages/talks.md -->
 Here are the slides of some talks.
+
+<!-- _pages/talks.md -->
 
 <div class="publications">
   
