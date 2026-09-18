@@ -15,8 +15,6 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-My name is Nicanor Carrasco-Vargas (he/they). I am a postdoctoral researcher at [Jagiellonian University](https://en.wikipedia.org/wiki/Jagiellonian_University) with [Adam Kanigowski](https://akanigow.math.umd.edu/).
+Hi, my name is Nicanor Carrasco-Vargas (he/they). I am a postdoctoral researcher at [Jagiellonian University](https://en.wikipedia.org/wiki/Jagiellonian_University) with [Adam Kanigowski](https://akanigow.math.umd.edu/).
 
 Previously, I was a PhD student at [Pontifical Catholic University of Chile](https://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Chile) with [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/).
-
-I am interested in dynamics and computability. 
