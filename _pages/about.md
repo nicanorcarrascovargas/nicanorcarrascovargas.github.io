@@ -17,4 +17,4 @@ social: false  # includes social icons at the bottom of the page
 ---
 Hi, my name is Nicanor Carrasco-Vargas (he/they). I am a postdoctoral researcher at [Jagiellonian University](https://en.wikipedia.org/wiki/Jagiellonian_University) with [Adam Kanigowski](https://akanigow.math.umd.edu/).
 
-Previously, I was a PhD student at [Pontifical Catholic University of Chile](https://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Chile) with [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/).
+Previously, I was a PhD student at [Pontifical Catholic University of Chile](https://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Chile) with [Cristóbal Rojas](https://www.mat.uc.cl/personas/perfil/cristobal.rojas) and [Sebastián Barbieri](http://www.sbarbieri.usach.cl/](https://www.sbarbieri.cl/).
