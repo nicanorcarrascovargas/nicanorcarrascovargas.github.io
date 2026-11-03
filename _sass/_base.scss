@@ -1340,3 +1340,19 @@ html { scroll-behavior: smooth; }
     max-width: 100%;
   }
 }
+
+/* Compact outlined controls for publication and talk resource links. */
+.research-publications .research-entry > .links a[data-link] {
+  display: inline-block;
+  padding: 0.08em 0.35em;
+  border: 1px solid var(--research-secondary);
+  border-radius: 2px;
+  line-height: 1.3;
+  text-decoration: none;
+
+  &:hover, &:focus-visible {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
