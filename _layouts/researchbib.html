@@ -71,10 +71,10 @@
         {% assign entrytype_text = entrytype | strip_html | strip %}
         {%- capture periodical -%}{{ entrytype }}{% if entry.month %}{% if entrytype_text != "" %}, {% endif %}{{ entry.month | capitalize }}{% endif %}{%- endcapture -%}
 
-    {{ coauthors | strip }}
     {%- assign coauthor_text = coauthors | strip_html | strip -%}
     {%- assign venue_text = periodical | strip_html | strip -%}
     {% if venue_text != "" %}<span class="research-venue">{{ periodical | strip }}</span>{% endif %}
+    {{ coauthors | strip }}
     {% if entry.note %}<span class="research-note">{{ entry.note }}</span>{% endif %}
   </div>
           <!-- Links/Buttons -->
