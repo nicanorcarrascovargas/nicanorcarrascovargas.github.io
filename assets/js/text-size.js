@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       try { localStorage.setItem(key, String(size)); } catch (error) {}
     }
   }
-  decrease.addEventListener("click", function () { size = Math.max(85, size - 5); apply(true); });
-  increase.addEventListener("click", function () { size = Math.min(180, size + 5); apply(true); });
+  decrease.addEventListener("click", function () { size = Math.max(85, size - 10); apply(true); });
+  increase.addEventListener("click", function () { size = Math.min(180, size + 10); apply(true); });
   function restore() {
     try {
       var stored = Number(localStorage.getItem(key));
