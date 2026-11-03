@@ -1148,3 +1148,15 @@ nav[data-toggle="toc"] {
     font-size: 0.95em;
   }
 }
+
+/* Single-page sections and fixed-navigation anchor clearance. */
+html { scroll-behavior: smooth; }
+.single-page > section {
+  scroll-margin-top: var(--section-offset, 7rem);
+}
+.single-page > section + section {
+  margin-top: 3rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

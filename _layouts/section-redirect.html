@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  {% include head.html %}
+  <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}#{{ page.section }}">
+  <script>window.location.replace({{ '/' | relative_url | jsonify }} + (window.location.hash || "#{{ page.section }}"));</script>
+</head>
+<body><p><a href="{{ '/' | relative_url }}#{{ page.section }}">Continue to {{ page.title }}</a></p></body>
+</html>

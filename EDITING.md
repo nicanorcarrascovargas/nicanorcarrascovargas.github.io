@@ -5,11 +5,11 @@
 | Change | File |
 | --- | --- |
 | Homepage biography | `_pages/about.md` |
-| Research introduction | `_pages/research.md` |
+| Research introduction | `_includes/sections/research.md` |
 | Submitted papers | `_bibliography/preprints.bib` |
 | Accepted papers | `_bibliography/papers.bib` |
 | Thesis | `_bibliography/thesis.bib` |
-| Talks | `_bibliography/talks.bib` |
+| Talks | `_bibliography/talks.bib` (introduction: `_includes/sections/talks.md`) |
 | PDFs and slides | `assets/pdf/` |
 | Contact and profile links | `_config.yml` |
 | Typography and layout | `_sass/` |
@@ -55,3 +55,10 @@ Commit Gemfile.lock after intentional dependency updates; ordinary builds should
 GitHub Actions and the hosted Ruby/Ubuntu versions are pinned in the deployment workflow.
 Do not edit generated output on the deployment branch.
 To undo an edit, revert its commit on master rather than rewriting history.
+
+## Single-page structure
+
+The homepage assembles About, Research, and Talks through `_layouts/singlepage.html`.
+About text stays in `_pages/about.md`; Research and Talks text stays in the Markdown includes listed above.
+The original `/research/` and `/talks/` addresses redirect to the corresponding homepage sections.
+Use `/#about`, `/#research`, and `/#talks` for direct section links.
