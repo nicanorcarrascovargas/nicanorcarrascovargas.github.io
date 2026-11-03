@@ -47,13 +47,13 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  <body class=" sticky-bottom-footer">
 
     <!-- Header -->
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm ">
         <div class="container">
           <!-- Social Icons -->
           <div class="navbar-brand social">
@@ -219,7 +219,7 @@ window.MathJax = {
   }
 
   function initializeProgressElement() {
-    let navbarHeight = $("#navbar").outerHeight(true);
+    let navbarHeight = 0;
     $("body").css({ "padding-top": navbarHeight });
     $("progress-container").css({ "padding-top": navbarHeight });
     progressBar.css({ top: navbarHeight });
