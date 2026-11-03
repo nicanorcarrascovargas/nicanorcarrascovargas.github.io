@@ -74,8 +74,8 @@
     {{ coauthors | strip }}
     {%- assign coauthor_text = coauthors | strip_html | strip -%}
     {%- assign venue_text = periodical | strip_html | strip -%}
-    <span class="research-venue">{{ periodical | strip }}</span>
-    {%- if entry.note %}{% if coauthor_text != "" or venue_text != "" %} · {% endif %}{{ entry.note }}{% endif %}
+    {% if venue_text != "" %}<span class="research-venue">{{ periodical | strip }}</span>{% endif %}
+    {% if entry.note %}<span class="research-note">{{ entry.note }}</span>{% endif %}
   </div>
           <!-- Links/Buttons -->
           <div class="links">
