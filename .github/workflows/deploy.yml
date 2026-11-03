@@ -25,13 +25,6 @@ jobs:
         with:
           ruby-version: '3.2.11'
           bundler-cache: true
-      - name: Show resolved dependencies when bootstrapping the lockfile
-        run: |
-          if ! git ls-files --error-unmatch Gemfile.lock >/dev/null 2>&1; then
-            echo LOCKFILE_START
-            cat Gemfile.lock
-            echo LOCKFILE_END
-          fi
       - name: Build
         env:
           JEKYLL_ENV: production
