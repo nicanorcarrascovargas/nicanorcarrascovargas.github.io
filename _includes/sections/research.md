@@ -5,14 +5,14 @@ I am interested in theorems. Recently I have been working on entropy-type invari
 
 <!-- _pages/publications.md -->
 
-## Submitted
+#### Submitted
 <div class="publications research-publications">
 
 {% bibliography -f preprints --group_by none --template researchbib %}
 
 </div>
 
-## Accepted
+#### Accepted
 <div class="publications research-publications">
 
 {% bibliography -f papers --group_by none --template researchbib %}
