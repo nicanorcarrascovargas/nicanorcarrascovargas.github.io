@@ -6,3 +6,4 @@ gem 'jekyll-email-protect'
 gem 'jekyll-link-attributes'
 gem 'jekyll-sitemap'
 gem 'webrick'
+gem 'nokogiri' # Required by jekyll-link-attributes; not declared by that plugin.
