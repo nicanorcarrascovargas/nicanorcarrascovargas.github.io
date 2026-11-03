@@ -2,48 +2,44 @@ name: deploy
 
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [master, main]
   pull_request:
-    branches:
-      - master
-      - main
+    branches: [master, main]
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2'
-        bundler-cache: true
-    - name: Update _config.yml ⚙️
-      uses: fjogeleit/yaml-update-action@v0.13.1
-      with:
-        commitChange: false
-        valueFile: '_config.yml'
-        propertyPath: 'giscus.repo'
-        value: ${{ github.repository }}
-    - name: Install and Build 🔧
-      run: |
-        pip3 install --upgrade jupyter
-        npm install -g mermaid.cli
-        npm install -g purgecss
-        export JEKYLL_ENV=production
-        bundle exec jekyll build --lsi
-        purgecss -c purgecss.config.js
-    - name: Deploy 🚀
-      if: github.event_name != 'pull_request'
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: _site
-
+      - name: Checkout
+        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94
+        with:
+          ruby-version: '3.2.11'
+          bundler-cache: true
+      - name: Show resolved dependencies when bootstrapping the lockfile
+        run: |
+          if ! git ls-files --error-unmatch Gemfile.lock >/dev/null 2>&1; then
+            echo LOCKFILE_START
+            cat Gemfile.lock
+            echo LOCKFILE_END
+          fi
+      - name: Build
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Check local links
+        run: python3 scripts/check_links.py _site
+      - name: Deploy
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445
+        with:
+          folder: _site

@@ -160,16 +160,6 @@ external_sources: []
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
-
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
@@ -204,6 +194,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
+  - EDITING.md
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
 keep_files:
   - CNAME
   - .nojekyll
@@ -211,21 +206,10 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
-  - jekyll-diagrams
   - jekyll-email-protect
-  - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
 
 # Sitemap settings
 defaults:
@@ -329,7 +313,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
@@ -401,19 +385,3 @@ medium_zoom:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
