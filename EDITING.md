@@ -56,9 +56,9 @@ GitHub Actions and the hosted Ruby/Ubuntu versions are pinned in the deployment 
 Do not edit generated output on the deployment branch.
 To undo an edit, revert its commit on master rather than rewriting history.
 
-## Single-page structure
+## Page structure
 
-The homepage assembles About, Research, and Talks through `_layouts/singlepage.html`.
-About text stays in `_pages/about.md`; Research and Talks text stays in the Markdown includes listed above.
-The original `/research/` and `/talks/` addresses redirect to the corresponding homepage sections.
-Use `/#about`, `/#research`, and `/#talks` for direct section links.
+About, Research, and Talks are separate pages at `/`, `/research/`, and `/talks/`.
+About text stays in `_pages/about.md`. Research and Talks content stays in
+`_includes/sections/research.md` and `_includes/sections/talks.md`.
+All three use `_layouts/reading-page.html`, with shared text-size controls and styling.

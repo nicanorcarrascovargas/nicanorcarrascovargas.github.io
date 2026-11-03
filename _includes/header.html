@@ -37,9 +37,9 @@
           <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ml-auto flex-nowrap">
 
-              <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#about">About</a></li>
-              <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#research">Research</a></li>
-              <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#talks">Talks</a></li>
+              <li class="nav-item{% if page.permalink == '/' %} active{% endif %}"><a class="nav-link" href="{{ '/' | relative_url }}"{% if page.permalink == '/' %} aria-current="page"{% endif %}>About</a></li>
+              <li class="nav-item{% if page.permalink == '/research/' %} active{% endif %}"><a class="nav-link" href="{{ '/research/' | relative_url }}"{% if page.permalink == '/research/' %} aria-current="page"{% endif %}>Research</a></li>
+              <li class="nav-item{% if page.permalink == '/talks/' %} active{% endif %}"><a class="nav-link" href="{{ '/talks/' | relative_url }}"{% if page.permalink == '/talks/' %} aria-current="page"{% endif %}>Talks</a></li>
               <li class="text-size-controls" aria-label="Text size">
                 <button type="button" id="text-size-decrease" aria-label="Decrease text size" title="Decrease text size">A−</button>
                 <button type="button" id="text-size-increase" aria-label="Increase text size" title="Increase text size">A+</button>

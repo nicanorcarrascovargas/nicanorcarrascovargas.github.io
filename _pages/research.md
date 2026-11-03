@@ -1,7 +1,7 @@
 ---
-layout: section-redirect
+layout: reading-page
 permalink: /research/
 title: Research
-section: research
-sitemap: false
 ---
+{% capture section_content %}{% include sections/research.md %}{% endcapture %}
+{{ section_content | markdownify }}

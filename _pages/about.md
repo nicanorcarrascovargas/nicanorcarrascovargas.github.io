@@ -1,5 +1,5 @@
 ---
-layout: singlepage
+layout: reading-page
 title: About
 permalink: /
 subtitle: 

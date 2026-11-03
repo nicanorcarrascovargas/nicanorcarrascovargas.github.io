@@ -1,7 +1,7 @@
 ---
-layout: section-redirect
+layout: reading-page
 permalink: /talks/
 title: Talks
-section: talks
-sitemap: false
 ---
+{% capture section_content %}{% include sections/talks.md %}{% endcapture %}
+{{ section_content | markdownify }}
