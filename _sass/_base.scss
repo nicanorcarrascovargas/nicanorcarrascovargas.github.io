@@ -1106,40 +1106,62 @@ nav[data-toggle="toc"] {
   margin: 0 0.4rem;
 }
 
-/* Compact bibliography on Research only. */
+/* Research bibliography: aligned years, text, and fixed link slots. */
 .research-publications {
   --research-secondary: #595959;
   margin-top: 0.75rem;
 
   ol.bibliography {
-    list-style: disc outside;
+    list-style: none;
     padding-inline-start: 0;
-
-    > li {
-      margin-bottom: 0.85rem;
-
-      &::marker {
-        color: var(--research-secondary);
-      }
-    }
+    > li { margin-bottom: 1rem; }
   }
 
   .research-entry {
+    display: grid;
+    grid-template-columns: 4ch minmax(0, 1fr) max-content;
+    column-gap: 1rem;
+    align-items: baseline;
     line-height: 1.4;
   }
 
-  .research-title-line .title {
-    display: inline;
-    color: var(--global-text-color);
+  .research-year {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--research-secondary);
+    font-variant-numeric: tabular-nums;
   }
 
-  .research-title-line .links {
-    display: inline;
-    margin-left: 0.5rem;
+  .research-title-line {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    .title { display: inline; color: var(--global-text-color); }
+  }
+
+  .research-meta {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+    font-size: 1em;
+    color: var(--research-secondary);
+    &:empty { display: none; }
+    span, em, a { color: inherit; }
+    a:hover, a:focus-visible { color: var(--global-theme-color); }
+  }
+
+  .research-entry > .links {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 3.1em 2.2em 3.8em 1.8em;
+    gap: 0.2rem 0.6rem;
+    align-self: start;
+    margin: 0;
 
     a {
       display: inline;
-      margin: 0 0.4rem 0 0;
+      margin: 0;
       padding: 0;
       border: 0;
       box-shadow: none;
@@ -1149,7 +1171,12 @@ nav[data-toggle="toc"] {
       text-transform: none;
       white-space: nowrap;
       cursor: pointer;
+      grid-row: 2;
 
+      &[data-link="arxiv"] { grid-column: 1; grid-row: 1; }
+      &[data-link="pdf"] { grid-column: 2; grid-row: 1; }
+      &[data-link="journal"] { grid-column: 3; grid-row: 1; }
+      &[data-link="bib"] { grid-column: 4; grid-row: 1; }
       &:hover, &:focus-visible {
         color: var(--global-theme-color);
         text-decoration: underline;
@@ -1157,22 +1184,31 @@ nav[data-toggle="toc"] {
     }
   }
 
-  .research-meta {
-    font-size: 1em;
-    color: var(--research-secondary);
-
-    span, em, a {
-      color: inherit;
-    }
-
-    a:hover, a:focus-visible {
-      color: var(--global-theme-color);
-    }
+  .research-entry > .hidden {
+    grid-column: 2 / -1;
+    min-width: 0;
   }
 }
 
 html[data-theme='dark'] .research-publications {
   --research-secondary: #b8b8b8;
+}
+
+@media (max-width: 767px) {
+  .research-publications {
+    .research-entry {
+      grid-template-columns: 4ch minmax(0, 1fr);
+      column-gap: 0.65rem;
+    }
+    .research-entry > .links {
+      grid-column: 2;
+      grid-row: 3;
+      margin-top: 0.2rem;
+      grid-template-columns: 3.1em 2.2em 3.8em 1.8em;
+      gap: 0.2rem 0.35rem;
+    }
+    .research-entry > .hidden { grid-column: 1 / -1; }
+  }
 }
 
 /* Single-page sections and fixed-navigation anchor clearance. */
