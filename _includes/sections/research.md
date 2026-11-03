@@ -18,7 +18,7 @@ I am interested in theorems. Recently I have been working on entropy-type invari
 
 </div>
 
-## PhD Thesis
+#### PhD Thesis
 <div class="publications research-publications">
 
 {% bibliography -f thesis --group_by none --template researchbib %}
