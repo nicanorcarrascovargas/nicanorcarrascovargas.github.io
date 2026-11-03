@@ -14,6 +14,8 @@
 
 {% bibliography -f papers --group_by none --template researchbib %}
 
+---
+
 </div>
 
 #### PhD Thesis
