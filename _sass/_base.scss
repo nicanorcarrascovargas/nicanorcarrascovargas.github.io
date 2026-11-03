@@ -832,14 +832,6 @@ code {
 }
 
 
-// Transitioning Themes
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
 
 // Extra Markdown style (post Customization)
 .post {
@@ -1355,4 +1347,11 @@ html { scroll-behavior: smooth; }
     color: var(--global-theme-color);
     text-decoration: none;
   }
+}
+
+/* Keep page loads, theme changes, and controls free of decorative motion. */
+html { scroll-behavior: auto; }
+*, *::before, *::after {
+  animation: none !important;
+  transition: none !important;
 }
