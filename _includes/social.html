@@ -8,7 +8,7 @@
             <a href="https://wa.me/{{ site.whatsapp_number }}" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
             {% endif %}
             {%- if site.orcid_id -%}
-            <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+            <a class="academic-profile-link" href="https://orcid.org/{{ site.orcid_id }}" title="ORCID">orcid</a>
             {% endif %}
             {%- if site.scholar_userid -%}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
@@ -74,16 +74,16 @@
             <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
             {% endif %}
             {%- if site.arxiv_url -%}
-            <a href="{{ site.arxiv_url }}" title="arXiv"><i class="ai ai-arxiv"></i></a>
+            <a class="academic-profile-link" href="{{ site.arxiv_url }}" title="arXiv">arxiv</a>
             {% endif %}
             {%- if site.mathscinet_url -%}
-            <a href="{{ site.mathscinet_url }}" title="MathSciNet"><span class="custom-social-icon" aria-hidden="true" style="display: inline-block; height: 1em; width: 0.9em; vertical-align: -0.125em; background-color: currentColor; -webkit-mask: url('{{ '/assets/img/mathscinet.svg' | relative_url }}') center / contain no-repeat; mask: url('{{ '/assets/img/mathscinet.svg' | relative_url }}') center / contain no-repeat; transition: color 0.2s ease-in-out;"></span></a>
+            <a class="academic-profile-link" href="{{ site.mathscinet_url }}" title="MathSciNet">mathscinet</a>
             {% endif %}
             {%- if site.acm_url -%}
             <a href="{{ site.acm_url }}" title="ACM Digital Library"><i class="ai ai-acmdl"></i></a>
             {% endif %}
             {%- if site.zbmath_url -%}
-            <a href="{{ site.zbmath_url }}" title="zbMATH Open"><svg class="custom-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="height: 1em; width: 1em; vertical-align: -0.125em; transition: color 0.2s ease-in-out;" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h8v8H0zM8 8h8v8H8z"></path></svg></a>
+            <a class="academic-profile-link" href="{{ site.zbmath_url }}" title="zbMATH Open">zbmath</a>
             {% endif %}
             {%- if site.stackoverflow_id -%}
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a>

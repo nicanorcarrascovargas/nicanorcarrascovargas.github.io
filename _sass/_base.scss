@@ -1073,3 +1073,35 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
+
+
+// Text labels for academic profiles, using installed typewriter fonts.
+.social a.academic-profile-link {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--global-text-color);
+  white-space: nowrap;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+
+.navbar .navbar-brand.social {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.85rem;
+  max-width: calc(100% - 3.5rem);
+  white-space: normal;
+}
+
+.social .contact-icons a.academic-profile-link {
+  margin: 0 0.4rem;
+}
