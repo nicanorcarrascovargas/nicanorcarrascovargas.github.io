@@ -9,7 +9,7 @@ let toggleTheme = (theme) => {
 };
 
 let setTheme = (theme) => {
-  transTheme();
+
   setHighlight(theme);
   setGiscusTheme(theme);
 
@@ -80,12 +80,6 @@ let setGiscusTheme = (theme) => {
   });
 };
 
-let transTheme = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 500);
-};
 
 let initTheme = (theme) => {
   if (theme == null || theme == "null") {
