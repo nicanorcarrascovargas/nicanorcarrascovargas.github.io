@@ -1,13 +1,11 @@
+    <!-- Keep page resources on this site's origin, including inherited demo pages. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self' blob:; frame-src 'self'; object-src 'none'; base-uri 'self'">
     <!-- Metadata, OpenGraph and Schema.org -->
     {% include metadata.html %}
 
-    <!-- Bootstrap & MDB -->
+    <!-- Locally hosted styles -->
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-    <!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
-
-    <!-- Bootstrap Table -->
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
@@ -20,10 +18,6 @@
     <link href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet" />
     {% endif %}
 
-    {% if page.tikzjax %}
-    <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
-    <script defer src="https://tikzjax.com/v1/tikzjax.js"></script>
-    {% endif %}
 
     <!-- Styles -->
     {% if site.icon.size <= 4 %}
