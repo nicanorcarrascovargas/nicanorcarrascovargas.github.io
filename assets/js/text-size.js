@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
   var status = document.getElementById("text-size-status");
   if (!decrease || !increase) return;
   var key = "reading-text-size";
-  var size = 100;
+  var size = 120;
   function apply(announce) {
     document.documentElement.style.setProperty("--reading-font-size", (size / 100) + "rem");
     decrease.disabled = size <= 85;
-    increase.disabled = size >= 150;
+    increase.disabled = size >= 180;
     if (announce) status.textContent = "Text size " + size + " percent";
     if (announce) {
       try { localStorage.setItem(key, String(size)); } catch (error) {}
     }
   }
   decrease.addEventListener("click", function () { size = Math.max(85, size - 5); apply(true); });
-  increase.addEventListener("click", function () { size = Math.min(150, size + 5); apply(true); });
+  increase.addEventListener("click", function () { size = Math.min(180, size + 5); apply(true); });
   function restore() {
     try {
       var stored = Number(localStorage.getItem(key));
-      size = Number.isFinite(stored) && stored >= 85 && stored <= 150 ? stored : 100;
+      size = Number.isFinite(stored) && stored >= 85 && stored <= 180 ? stored : 120;
     } catch (error) { /* Controls also work without browser storage. */ }
     apply(false);
   }
