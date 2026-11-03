@@ -1110,6 +1110,7 @@ nav[data-toggle="toc"] {
 .research-publications {
   --research-secondary: #595959;
   margin-top: 0.75rem;
+  container-type: inline-size;
 
   ol.bibliography {
     list-style: none;
@@ -1137,13 +1138,17 @@ nav[data-toggle="toc"] {
     grid-column: 1;
     grid-row: 1;
     min-width: 0;
+    overflow-wrap: anywhere;
     .title { display: inline; color: var(--global-text-color); }
   }
 
   .research-meta {
-    grid-column: 1 / 3;
+    grid-column: 1;
+    grid-template-columns: minmax(0, 1fr);
+    overflow-wrap: anywhere;
     display: grid;
     gap: 0.15rem;
+    .research-venue, .research-coauthors, .research-note { min-width: 0; max-width: 100%; }
     .research-venue { text-align: left; }
     .research-note { text-align: left; }
     grid-row: 2;
@@ -1234,6 +1239,7 @@ html { scroll-behavior: smooth; }
 
 /* Talk resources use the same aligned slots as research resources. */
 .talk-publications {
+  .research-entry > .links { grid-template-columns: 6ch 6ch 3ch 3ch; }
   .research-entry > .links a {
     &[data-link="slides"] { grid-column: 1; grid-row: 1; }
     &[data-link="poster"] { grid-column: 2; grid-row: 1; }
@@ -1268,5 +1274,32 @@ html { scroll-behavior: smooth; }
     cursor: pointer;
     &:hover, &:focus-visible { color: var(--global-theme-color); }
     &:disabled { opacity: 0.4; cursor: default; }
+  }
+}
+
+/* Reflow according to available reading width, including enlarged text. */
+@container (max-width: 48em) {
+  .research-publications .research-entry {
+    grid-template-columns: minmax(0, 1fr) 4ch;
+    column-gap: 0.65rem;
+  }
+  .research-publications .research-year { grid-column: 2; }
+  .research-publications .research-meta { grid-column: 1 / -1; }
+  .research-publications .research-entry > .links {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 0.2rem;
+    max-width: 100%;
+  }
+}
+@container (max-width: 24em) {
+  .research-publications .research-entry > .links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .research-publications .research-entry > .links a[data-link] {
+    grid-column: auto;
+    grid-row: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 }
