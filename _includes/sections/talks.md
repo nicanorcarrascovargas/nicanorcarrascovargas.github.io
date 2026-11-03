@@ -5,4 +5,6 @@
   
 {% bibliography --file talks --template talks-bib --order descending --group_order descending --sort_by descending --group_by none%}
 
+---
+
 </div>
