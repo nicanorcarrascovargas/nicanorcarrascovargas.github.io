@@ -1373,16 +1373,25 @@ html { scroll-behavior: auto; }
     &[aria-pressed="true"] { border-color: var(--global-theme-color); }
   }
 }
+/* Adapted purple, turquoise, and green palette; muted lavender surfaces. */
 html[data-colour-mode="colourful"] {
-  --global-theme-color: #216779;
-  --global-hover-color: #216779;
-  --colour-title: #315a92;
-  --colour-heading: #704495;
-  --colour-pdf: #a1393a;
-  --colour-arxiv: #7250a1;
-  --colour-bib: #886008;
-  --colour-journal: #26705a;
+  --global-bg-color: #f0edf5;
+  --global-card-bg-color: #f0edf5;
+  --global-code-bg-color: #e8e3ef;
+  --global-text-color: #302b3c;
+  --global-text-color-light: #5e566d;
+  --global-divider-color: #d2c9de;
+  --global-theme-color: #146e70;
+  --global-hover-color: #146e70;
+  --colour-secondary: #5e566d;
+  --colour-title: #70408f;
+  --colour-heading: #70408f;
+  --colour-pdf: #146e70;
+  --colour-arxiv: #70408f;
+  --colour-bib: #386c45;
+  --colour-journal: #386c45;
 
+  .research-publications { --research-secondary: var(--colour-secondary); }
   .reading-content h1 { color: var(--global-theme-color); }
   .reading-content h2, .reading-content h3, .reading-content h4 { color: var(--colour-heading); }
   .research-publications .research-title-line .title { color: var(--colour-title); }
@@ -1397,12 +1406,19 @@ html[data-colour-mode="colourful"] {
   }
 }
 html[data-theme="dark"][data-colour-mode="colourful"] {
-  --global-theme-color: #83cbd2;
-  --global-hover-color: #83cbd2;
-  --colour-title: #aac8f0;
-  --colour-heading: #c6a4e3;
-  --colour-pdf: #efa1a2;
-  --colour-arxiv: #c8acf0;
-  --colour-bib: #e1c27c;
-  --colour-journal: #8ed2b8;
+  --global-bg-color: #252330;
+  --global-card-bg-color: #252330;
+  --global-code-bg-color: #302c3d;
+  --global-text-color: #e4dfef;
+  --global-text-color-light: #bdb3cd;
+  --global-divider-color: #51465f;
+  --global-theme-color: #83d0c9;
+  --global-hover-color: #83d0c9;
+  --colour-secondary: #bdb3cd;
+  --colour-title: #c6a0e8;
+  --colour-heading: #c6a0e8;
+  --colour-pdf: #83d0c9;
+  --colour-arxiv: #c6a0e8;
+  --colour-bib: #a0cf9e;
+  --colour-journal: #a0cf9e;
 }
