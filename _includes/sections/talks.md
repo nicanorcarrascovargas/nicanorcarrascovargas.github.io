@@ -1,3 +1,5 @@
+---
+
 Here are the slides of some talks.
 
 <!-- _pages/talks.md -->
