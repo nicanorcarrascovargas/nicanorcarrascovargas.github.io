@@ -93,3 +93,12 @@ let initTheme = (theme) => {
 };
 
 initTheme(localStorage.getItem("theme"));
+
+/* Synchronize restored pages and other open tabs with the saved preference. */
+function restoreSavedTheme() {
+  try { initTheme(localStorage.getItem("theme")); } catch (error) {}
+}
+window.addEventListener("pageshow", restoreSavedTheme);
+window.addEventListener("storage", function (event) {
+  if (event.key === "theme" || event.key === null) restoreSavedTheme();
+});
