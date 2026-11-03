@@ -1,22 +1,17 @@
-// Adjust reading text independently of browser zoom and navigation.
-document.addEventListener("DOMContentLoaded", function () {
-  var decrease = document.getElementById("text-size-decrease");
-  var increase = document.getElementById("text-size-increase");
-  var status = document.getElementById("text-size-status");
-  if (!decrease || !increase) return;
+// Restore reading size before rendering, then connect the reader controls.
+(function () {
   var key = "reading-text-size";
   var size = 120;
+  var decrease, increase, status;
   function apply(announce) {
     document.documentElement.style.setProperty("--reading-font-size", (size / 100) + "rem");
-    decrease.disabled = size <= 85;
-    increase.disabled = size >= 180;
-    if (announce) status.textContent = "Text size " + size + " percent";
+    if (decrease) decrease.disabled = size <= 85;
+    if (increase) increase.disabled = size >= 180;
     if (announce) {
+      if (status) status.textContent = "Text size " + size + " percent";
       try { localStorage.setItem(key, String(size)); } catch (error) {}
     }
   }
-  decrease.addEventListener("click", function () { size = Math.max(85, size - 10); apply(true); });
-  increase.addEventListener("click", function () { size = Math.min(180, size + 10); apply(true); });
   function restore() {
     try {
       var stored = Number(localStorage.getItem(key));
@@ -24,9 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) { /* Controls also work without browser storage. */ }
     apply(false);
   }
+  restore();
   window.addEventListener("pageshow", restore);
   window.addEventListener("storage", function (event) {
-    if (event.storageArea === localStorage && (event.key === key || event.key === null)) restore();
+    if (event.key === key || event.key === null) restore();
   });
-  restore();
-});
+  function connectControls() {
+    decrease = document.getElementById("text-size-decrease");
+    increase = document.getElementById("text-size-increase");
+    status = document.getElementById("text-size-status");
+    if (!decrease || !increase) return;
+    decrease.addEventListener("click", function () { size = Math.max(85, size - 10); apply(true); });
+    increase.addEventListener("click", function () { size = Math.min(180, size + 10); apply(true); });
+    apply(false);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", connectControls);
+  else connectControls();
+})();
