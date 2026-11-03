@@ -1320,3 +1320,22 @@ html { scroll-behavior: smooth; }
     max-width: 100%;
   }
 }
+
+/* Talk slides follow the same separate resource-row layout as publications. */
+.talk-publications {
+  .research-entry {
+    grid-template-columns: minmax(0, 1fr) 4ch;
+  }
+  .research-entry > .research-year { grid-column: 2; }
+  .research-entry > .research-meta { grid-column: 1; }
+  .research-entry > .links {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.2em 0.8em;
+    margin-top: 0.2rem;
+    max-width: 100%;
+  }
+}
