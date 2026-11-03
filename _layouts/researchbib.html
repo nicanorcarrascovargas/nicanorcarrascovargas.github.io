@@ -1,6 +1,6 @@
 ---
 ---
-<div id="{{ entry.key }}" class="research-entry">
+<div id="{{ entry.key }}" class="research-entry publication-entry">
   <div class="research-year">{{ entry.year }}</div>
   <div class="research-title-line">
     <span class="title">{{ entry.title }}</span>
@@ -82,6 +82,13 @@
           {%- if entry.abstract %}
             <a class="abstract" role="button" data-link="abs">abs</a>
           {%- endif %}
+          {%- if entry.pdf %}
+            {% if entry.pdf contains '://' -%}
+            <a href="{{ entry.pdf }}" class="research-link" role="button" data-link="pdf">pdf</a>
+            {%- else -%}
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="research-link" role="button" data-link="pdf">pdf</a>
+            {%- endif %}
+          {%- endif %}
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="research-link" role="button" data-link="arxiv">arxiv</a>
           {%- endif %}
@@ -90,13 +97,6 @@
           {%- endif %}
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="research-link" role="button" data-link="html">html</a>
-          {%- endif %}
-          {%- if entry.pdf %}
-            {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="research-link" role="button" data-link="pdf">pdf</a>
-            {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="research-link" role="button" data-link="pdf">pdf</a>
-            {%- endif %}
           {%- endif %}
           {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
