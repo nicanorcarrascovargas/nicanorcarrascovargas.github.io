@@ -20,5 +20,3 @@ Hi :) my name is Nicanor Carrasco-Vargas (he/they).
 
 I am a postdoctoral researcher at IRIF with Valérie Berthé. Previously, I was a postdoctoral reseracher at Jagiellonian University with Adam Kanigowski, and before that I was a PhD student at Pontifical Catholic University of Chile with Cristóbal Rojas and Sebastián Barbieri.
 
----
-
