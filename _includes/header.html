@@ -40,6 +40,11 @@
               <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#about">About</a></li>
               <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#research">Research</a></li>
               <li class="nav-item"><a class="nav-link section-shortcut" href="{{ '/' | relative_url }}#talks">Talks</a></li>
+              <li class="text-size-controls" aria-label="Text size">
+                <button type="button" id="text-size-decrease" aria-label="Decrease text size" title="Decrease text size">A−</button>
+                <button type="button" id="text-size-increase" aria-label="Increase text size" title="Increase text size">A+</button>
+                <span id="text-size-status" class="sr-only" role="status" aria-live="polite"></span>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
