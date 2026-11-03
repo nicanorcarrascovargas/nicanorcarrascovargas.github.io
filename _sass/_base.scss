@@ -1108,10 +1108,20 @@ nav[data-toggle="toc"] {
 
 /* Compact bibliography on Research only. */
 .research-publications {
+  --research-secondary: #595959;
   margin-top: 0.75rem;
 
-  ol.bibliography li {
-    margin-bottom: 0.85rem;
+  ol.bibliography {
+    list-style: disc outside;
+    padding-inline-start: 0;
+
+    > li {
+      margin-bottom: 0.85rem;
+
+      &::marker {
+        color: var(--research-secondary);
+      }
+    }
   }
 
   .research-entry {
@@ -1120,6 +1130,7 @@ nav[data-toggle="toc"] {
 
   .research-title-line .title {
     display: inline;
+    color: var(--global-text-color);
   }
 
   .research-title-line .links {
@@ -1132,21 +1143,36 @@ nav[data-toggle="toc"] {
       padding: 0;
       border: 0;
       box-shadow: none;
-      font-size: 0.85em;
+      font-size: 1em;
       font-weight: normal;
+      color: var(--research-secondary);
       text-transform: none;
       white-space: nowrap;
       cursor: pointer;
 
       &:hover, &:focus-visible {
+        color: var(--global-theme-color);
         text-decoration: underline;
       }
     }
   }
 
   .research-meta {
-    font-size: 0.95em;
+    font-size: 1em;
+    color: var(--research-secondary);
+
+    span, em, a {
+      color: inherit;
+    }
+
+    a:hover, a:focus-visible {
+      color: var(--global-theme-color);
+    }
   }
+}
+
+html[data-theme='dark'] .research-publications {
+  --research-secondary: #b8b8b8;
 }
 
 /* Single-page sections and fixed-navigation anchor clearance. */
