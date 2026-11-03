@@ -1239,11 +1239,9 @@ html { scroll-behavior: smooth; }
 
 /* Talk resources use the same aligned slots as research resources. */
 .talk-publications {
-  .research-entry > .links { grid-template-columns: 6ch 6ch 3ch 3ch; }
+  .research-entry > .links { grid-template-columns: 6ch; }
   .research-entry > .links a {
     &[data-link="slides"] { grid-column: 1; grid-row: 1; }
-    &[data-link="poster"] { grid-column: 2; grid-row: 1; }
-    &[data-link="abs"] { grid-column: 3; grid-row: 1; }
   }
   .research-venue { overflow-wrap: anywhere; }
 }

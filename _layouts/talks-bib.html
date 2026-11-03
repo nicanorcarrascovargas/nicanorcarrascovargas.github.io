@@ -1,5 +1,21 @@
 ---
 ---
+{% assign month_key = entry.month | downcase | slice: 0, 3 %}
+{% case month_key %}
+{% when 'jan' %}{% assign month_name = 'January' %}
+{% when 'feb' %}{% assign month_name = 'February' %}
+{% when 'mar' %}{% assign month_name = 'March' %}
+{% when 'apr' %}{% assign month_name = 'April' %}
+{% when 'may' %}{% assign month_name = 'May' %}
+{% when 'jun' %}{% assign month_name = 'June' %}
+{% when 'jul' %}{% assign month_name = 'July' %}
+{% when 'aug' %}{% assign month_name = 'August' %}
+{% when 'sep' %}{% assign month_name = 'September' %}
+{% when 'oct' %}{% assign month_name = 'October' %}
+{% when 'nov' %}{% assign month_name = 'November' %}
+{% when 'dec' %}{% assign month_name = 'December' %}
+{% else %}{% assign month_name = entry.month %}
+{% endcase %}
 <div id="{{ entry.key }}" class="research-entry">
   <div class="research-year">{{ entry.year }}</div>
   <div class="research-title-line">
@@ -9,7 +25,7 @@
   <div class="research-meta">
     {% if entry.note %}
     <span class="research-venue">
-      {% if entry.url %}<a href="{{ entry.url | escape }}">{{ entry.note }}</a>{% else %}{{ entry.note }}{% endif %}{% if entry.month %}, {{ entry.month | capitalize }}{% if entry.day %} {{ entry.day }}{% endif %}{% endif %}
+      {% if entry.url %}<a href="{{ entry.url | escape }}">{{ entry.note }}</a>{% else %}{{ entry.note }}{% endif %}{% if entry.month %}, {{ month_name }}{% if entry.day %} {{ entry.day }}{% endif %}{% endif %}
     </span>
     {% elsif entry.url %}
     <span class="research-venue"><a href="{{ entry.url | escape }}">Event website</a></span>
@@ -17,9 +33,6 @@
   </div>
           <!-- Links/Buttons -->
           <div class="links">
-          {%- if entry.abstract %}
-            <a class="abstract" role="button" data-link="abs">abs</a>
-          {%- endif %}
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="research-link" role="button" data-link="arxiv">arxiv</a>
           {%- endif %}
@@ -52,13 +65,6 @@
           {%- if entry.code %}
             <a href="{{ entry.code }}" class="research-link" role="button" data-link="code">code</a>
           {%- endif %}
-          {%- if entry.poster %}
-            {% if entry.poster contains '://' -%}
-            <a href="{{ entry.poster }}" class="research-link" role="button" data-link="poster">poster</a>
-            {%- else -%}
-            <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="research-link" role="button" data-link="poster">poster</a>
-            {%- endif %}
-          {%- endif %}
           {%- if entry.slides %}
             {% if entry.slides contains '://' -%}
             <a href="{{ entry.slides }}" class="research-link" role="button" data-link="slides">slides</a>
@@ -70,13 +76,6 @@
             <a href="{{ entry.website }}" class="research-link" role="button" data-link="journal">journal</a>
           {%- endif %}
           </div>
-
-          {% if entry.abstract -%}
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>{{ entry.abstract }}</p>
-          </div>
-          {%- endif -%}
 
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
