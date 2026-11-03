@@ -1105,3 +1105,46 @@ nav[data-toggle="toc"] {
 .social .contact-icons a.academic-profile-link {
   margin: 0 0.4rem;
 }
+
+/* Compact bibliography on Research only. */
+.research-publications {
+  margin-top: 0.75rem;
+
+  ol.bibliography li {
+    margin-bottom: 0.85rem;
+  }
+
+  .research-entry {
+    line-height: 1.4;
+  }
+
+  .research-title-line .title {
+    display: inline;
+  }
+
+  .research-title-line .links {
+    display: inline;
+    margin-left: 0.5rem;
+
+    a {
+      display: inline;
+      margin: 0 0.4rem 0 0;
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      font-size: 0.85em;
+      font-weight: normal;
+      text-transform: none;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover, &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .research-meta {
+    font-size: 0.95em;
+  }
+}

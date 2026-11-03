@@ -14,21 +14,21 @@ I am interested in theorems. Recently I have been working on entropy-type invari
 <!-- _pages/publications.md -->
 
 ## Submitted
-<div class="publications">
+<div class="publications research-publications">
 
 {% bibliography -f preprints --group_by none %}
 
 </div>
 
 ## Accepted
-<div class="publications">
+<div class="publications research-publications">
 
 {% bibliography -f papers --group_by none %}
 
 </div>
 
 ## PhD Thesis
-<div class="publications">
+<div class="publications research-publications">
 
 {% bibliography -f thesis --group_by none %}
 
