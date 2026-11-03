@@ -19,6 +19,14 @@
       update();
       try { localStorage.setItem("colour-mode", enabled ? "colourful" : "colourless"); } catch (error) {}
     });
-    update();
+    function restore() {
+      try { enabled = localStorage.getItem("colour-mode") === "colourful"; } catch (error) {}
+      update();
+    }
+    window.addEventListener("pageshow", restore);
+    window.addEventListener("storage", function (event) {
+      if (event.key === "colour-mode" || event.key === null) restore();
+    });
+    restore();
   });
 })();
