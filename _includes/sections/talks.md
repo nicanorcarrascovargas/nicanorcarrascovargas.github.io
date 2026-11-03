@@ -1,7 +1,4 @@
 
-
-Here are the slides of some talks.
-
 <!-- _pages/talks.md -->
 
 <div class="publications research-publications talk-publications">
