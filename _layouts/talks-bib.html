@@ -7,75 +7,13 @@
 
   </div>
   <div class="research-meta">
-    {%- capture coauthors -%}
-        <!-- Coauthors only; the source BibTeX and Bib button retain all authors. -->
-        {%- assign collaborator_count = 0 -%}
-        {%- for author in entry.author_array -%}
-          {%- assign last = author.last | replace: "‑", "-" | replace: "–", "-" | downcase -%}
-          {%- assign first = author.first | downcase -%}
-          {%- unless last == "carrasco-vargas" and first == "nicanor" -%}
-            {%- assign collaborator_count = collaborator_count | plus: 1 -%}
-          {%- endunless -%}
-        {%- endfor -%}
-        {%- if collaborator_count > 0 %}
-        <span class="research-coauthors">
-          Joint work with{{ " " }}
-          {%- assign collaborator_index = 0 -%}
-          {%- for author in entry.author_array -%}
-            {%- assign last = author.last | replace: "‑", "-" | replace: "–", "-" | downcase -%}
-            {%- assign first = author.first | downcase -%}
-            {%- if last == "carrasco-vargas" and first == "nicanor" -%}
-              {%- continue -%}
-            {%- endif -%}
-            {%- assign collaborator_index = collaborator_index | plus: 1 -%}
-            {%- if collaborator_index > 1 -%}
-              {%- if collaborator_index == collaborator_count %} and {% else %}, {% endif -%}
-            {%- endif -%}
-            {%- assign coauthor_url = nil -%}
-            {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
-            {%- if site.data.coauthors[author_last_name] -%}
-              {%- for coauthor in site.data.coauthors[author_last_name] -%}
-                {%- if coauthor.firstname contains author.first -%}
-                  {%- assign coauthor_url = coauthor.url -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-            {%- if coauthor_url -%}
-              <a href="{{ coauthor_url }}">{{ author.first }} {{ author.last }}</a>
-            {%- else -%}
-              {{ author.first }} {{ author.last }}
-            {%- endif -%}
-          {%- endfor %}
-        </span>
-        {%- endif %}
-
-
-    {%- endcapture -%}
-        <!-- Journal/Book title and date -->
-        {% assign proceedings = "inproceedings,incollection" | split: ','%}
-        {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
-        {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
-        {%- elsif proceedings contains entry.type -%}
-          {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
-        {%- elsif thesis contains entry.type -%}
-          {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
-        {%- else -%}
-          {%- capture entrytype -%}{%- endcapture -%}
-        {%- endif -%}
-        {%- if entry.month -%}
-          {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
-        {%- endif -%}
-        
-        {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{% if entry.month %}{% if entrytype_text != "" %}, {% endif %}{{ entry.month | capitalize }}{% if entry.day %} {{ entry.day }}{% endif %}{% endif %}{%- endcapture -%}
-
-    {{ coauthors | strip }}
-    {%- assign coauthor_text = coauthors | strip_html | strip -%}
-    {%- assign venue_text = periodical | strip_html | strip -%}
-    {% if venue_text != "" %}<span class="research-venue">{{ periodical | strip }}</span>{% endif %}
-    {% if entry.note %}<span class="research-note">{{ entry.note }}</span>{% endif %}
+    {% if entry.note %}
+    <span class="research-venue">
+      {% if entry.url %}<a href="{{ entry.url | escape }}">{{ entry.note }}</a>{% else %}{{ entry.note }}{% endif %}{% if entry.month %}, {{ entry.month | capitalize }}{% if entry.day %} {{ entry.day }}{% endif %}{% endif %}
+    </span>
+    {% elsif entry.url %}
+    <span class="research-venue"><a href="{{ entry.url | escape }}">Event website</a></span>
+    {% endif %}
   </div>
           <!-- Links/Buttons -->
           <div class="links">
