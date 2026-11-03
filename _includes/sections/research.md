@@ -1,5 +1,4 @@
 
-
 <!-- _pages/publications.md -->
 
 #### Submitted
@@ -14,7 +13,9 @@
 
 {% bibliography -f papers --group_by none --template researchbib %}
 
+
 ---
+
 
 </div>
 
