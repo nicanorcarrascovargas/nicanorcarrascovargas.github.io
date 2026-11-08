@@ -25,7 +25,8 @@ To mark a paper accepted, move its entry from preprints.bib to papers.bib and up
 Local `pdf`, `slides`, and `poster` filenames resolve inside `assets/pdf/`.
 External URLs are allowed as ordinary links; they are not embedded resources.
 Thumbnails resolve inside `assets/img/publication_preview/`.
-The entry renderer is `_layouts/bib.html`; the compact CV renderer is `_layouts/shortbib.html`.
+Research entries use `_layouts/researchbib.html`; talks use `_layouts/talks-bib.html`.
+The legacy bibliography renderer is `_layouts/bib.html`; the compact CV renderer is `_layouts/shortbib.html`.
 
 ## CV
 
@@ -62,3 +63,18 @@ About, Research, and Talks are separate pages at `/`, `/research/`, and `/talks/
 About text stays in `_pages/about.md`. Research and Talks content stays in
 `_includes/sections/research.md` and `_includes/sections/talks.md`.
 All three use `_layouts/reading-page.html`, with shared text-size controls and styling.
+
+## Repository scope
+
+The live site uses About, Research, and Talks, plus the 404 page. Unused al-folio
+blog and archive layouts, project galleries, repository cards, sample data, and
+demo media have been removed. The disabled CV page and its supporting templates
+are retained, together with personal PDFs, slides, images, and bibliography files.
+
+Shared Sass, scripts, fonts, libraries, and their license notices remain in place
+where the current templates import or reference them. Some shared files still
+contain theme rules for optional features; removing those rules is a separate
+styling change and is outside this repository cleanup.
+
+GitHub Actions is the deployment path; the old Docker entry point and manual
+force-push deployment script are no longer included.
